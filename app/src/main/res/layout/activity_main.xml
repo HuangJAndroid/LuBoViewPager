@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huangj.lunboViewPager.MainActivity">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp"
+             android:text="轮播"
+             android:textColor="#f00" />
+    <ImageView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="200dp" >
+
+             <android.support.v4.view.ViewPager
+                 android:id="@+id/vp_viewPager"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom|center"
+                 android:layout_marginBottom="20dp" >
+
+                 <LinearLayout
+                     android:id="@+id/ll_viewGroup"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal" />
+             </RelativeLayout>
+
+         </FrameLayout>
+
+</LinearLayout>
